@@ -1,62 +1,113 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mi Tienda Online</title>
   <style>
-    body {font-family:Arial,sans-serif;background:#f7f7f7;margin:0;padding:0}
-    header {background:#008cba;color:#fff;padding:1rem;text-align:center}
-    .container {max-width:960px;margin:2rem auto;padding:0 1rem}
-    .grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}
-    .card {background:#fff;padding:1rem;border-radius:6px;box-shadow:0 2px 10px rgba(0,0,0,0.1)}
-    .card img {width:100%;border-radius:4px;height:200px;object-fit:cover}
-    .price {color:#008cba;font-weight:bold}
-    .btn {display:inline-block;margin-top:0.5rem;padding:0.6rem 1rem;background:#008cba;color:#fff;text-decoration:none;border-radius:4px}
-    footer {text-align:center;color:#555;font-size:0.8rem;margin-top:2rem;padding:1rem}
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f7fa;
+      margin: 0; padding: 0;
+      color: #333;
+    }
+    header {
+      background: #007bff;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+    }
+    .price {
+      color: #007bff;
+      font-weight: bold;
+      margin: 0.5rem 0;
+      font-size: 1.2rem;
+    }
+    .btn {
+      background: #007bff;
+      color: white;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: auto;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background: #0056b3;
+    }
+    footer {
+      text-align: center;
+      color: #777;
+      padding: 1rem;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Mi Tienda Online</h1>
-  <p>Compra fácil y rápido — Pagos con Yape o tarjeta</p>
-</header>
+<header>Mi Tienda Online</header>
 
-<main class="container">
+<div class="container">
   <div class="grid">
-    <!-- Producto 1 -->
+
     <div class="card">
-      <img src="https://via.placeholder.com/400x300?text=Producto+1" alt="Producto 1">
+      <img src="https://via.placeholder.com/300x180?text=Producto+1" alt="Producto 1" />
       <h3>Producto 1</h3>
-      <p>Descripción breve del producto.</p>
-      <p class="price">S/ 25.00</p>
-      <a href="https://wa.me/51999999999?text=Hola,+quiero+comprar+el+Producto+1" class="btn" target="_blank">Comprar por WhatsApp</a>
+      <p class="price">S/ 50.00</p>
+      <a href="https://wa.me/tu-numero" class="btn" target="_blank">Comprar por WhatsApp</a>
     </div>
 
-    <!-- Producto 2 -->
     <div class="card">
-      <img src="https://via.placeholder.com/400x300?text=Producto+2" alt="Producto 2">
+      <img src="https://via.placeholder.com/300x180?text=Producto+2" alt="Producto 2" />
       <h3>Producto 2</h3>
-      <p>Descripción breve del producto.</p>
-      <p class="price">S/ 30.00</p>
-      <a href="https://wa.me/51999999999?text=Hola,+quiero+comprar+el+Producto+2" class="btn" target="_blank">Comprar por WhatsApp</a>
+      <p class="price">S/ 75.00</p>
+      <a href="https://link-a-yape.com" class="btn" target="_blank">Pagar con Yape</a>
     </div>
 
-    <!-- Producto 3 -->
-    <div class="card">
-      <img src="https://via.placeholder.com/400x300?text=Producto+3" alt="Producto 3">
-      <h3>Producto 3</h3>
-      <p>Descripción breve del producto.</p>
-      <p class="price">S/ 40.00</p>
-      <a href="https://wa.me/51999999999?text=Hola,+quiero+comprar+el+Producto+3" class="btn" target="_blank">Comprar por WhatsApp</a>
-    </div>
+    <!-- Agrega más productos aquí -->
+
   </div>
-</main>
+</div>
 
-<footer>
-  © 2025 Mi Tienda • Hecho con ❤️ en Perú
-</footer>
+<footer>© 2025 Mi Tienda Online - Todos los derechos reservados</footer>
 
 </body>
 </html>
